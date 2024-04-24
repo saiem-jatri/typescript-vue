@@ -9,6 +9,9 @@ const reset:any =()=>{
 
 <template>
   <div>
+    <v-btn prepend-icon="$vuetify" variant="outlined">
+      Button
+    </v-btn>
    <Counter ref="counter" />
     <button @click="reset">-1</button>
   </div>

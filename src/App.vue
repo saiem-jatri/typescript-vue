@@ -26,6 +26,21 @@ const handleClick = (term: OrderTerm) => {
 <template>
   <RouterView />
   <div class="app">
+    <v-card
+        color="grey-lighten-4"
+        height="100px"
+        rounded="0"
+        flat
+    >
+      <v-toolbar density="compact">
+        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+        <v-toolbar-title>Title</v-toolbar-title>
+
+        <v-spacer></v-spacer>
+          <v-btn density="compact">Compact Button</v-btn>
+      </v-toolbar>
+    </v-card>
       <div class="order">
         <button @click="handleClick('title')">Order by title</button>
         <button @click="handleClick('salary')">Order by salary</button>
